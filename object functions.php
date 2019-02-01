@@ -3,13 +3,13 @@
 
 class Student{
 	var $name;
-	var $major;
+	var $course;
 	var $gpa;
 	
 	//constructor
-function __construct($name,$major,$gpa){
+function __construct($name,$course,$gpa){
 	$this->name =$name;
-	$this->major =$major;
+	$this->course =$course;
 	$this->gpa =$gpa;
 	
 	
@@ -31,7 +31,7 @@ function hasHonors(){
 
 $student1 =new Student("jim", "Business", 2.8);
 $student1 =new Student("pam", "Art", 3.5);
-
+echo "the student will graduate ? <br>";
 echo $student1->hasHonors();
 
 ?>
